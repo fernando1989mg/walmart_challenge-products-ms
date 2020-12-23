@@ -1,0 +1,17 @@
+server:
+  port: 3001
+  servlet:
+    context-path: /products
+spring:
+  application:
+    name: walmart_challenge-products-ms
+  data:
+    mongodb:
+#user y password deberían estar almacenados en otro lugar como vault, los dejamos aquí para agilizar el desarrollo en virtud del tiempo
+      uri: mongodb+srv://invitado:Hola1234.@cluster-walmart-challen.ctlh5.mongodb.net/walmart-challenge?retryWrites=true&w=majority
+      database: walmart-challenge
+
+campaign:
+  palindromo:
+    enable: true
+    discount: 50

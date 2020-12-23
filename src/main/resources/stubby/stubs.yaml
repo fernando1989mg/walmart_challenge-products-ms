@@ -1,0 +1,10 @@
+- request:
+    method: POST
+    url: ^/sinacofiws_SNCR/SNCR4401.asmx$
+    post: .*83925800-3.*
+
+  response:
+    headers:
+       content-type: application/json
+    status: 200
+    file: xml-responses/datosEmpresa.xml
