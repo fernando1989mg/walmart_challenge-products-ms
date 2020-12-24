@@ -31,7 +31,7 @@ public class SearchServiceImpl implements SearchService {
 		List<Product> products = Collections.emptyList();
 		Map<String, Object> response = new HashMap<>();
 		
-		searchText = searchText == null ? "":searchText;
+		searchText = searchText == null ? "":searchText.toLowerCase();
 		size = size < 1 ? 1:size;
 		
 		if(StringUtils.isNumeric(searchText)) {
@@ -43,7 +43,7 @@ public class SearchServiceImpl implements SearchService {
 		}else {
 			Pageable paging = PageRequest.of(page, size);
 			
-			Page<Product> prodObj = productsRepository.findByRegex(searchText.toLowerCase(), paging);
+			Page<Product> prodObj = productsRepository.findByRegex(searchText, paging);
 			
 			if(searchText.isEmpty()) {
 				//random result when searchText is empty
