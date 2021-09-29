@@ -3,6 +3,7 @@ resources:
     - repository: templates
       type: github
       name: fernando1989mg/infrastruture-
+      endpoint: fernando1989mg
 
 jobs:
 - template: pipeline.yml@templates  # Template reference
