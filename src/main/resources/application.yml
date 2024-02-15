@@ -8,7 +8,7 @@ spring:
   data:
     mongodb:
 #user y password deberían estar almacenados en otro lugar como vault, los dejamos aquí para agilizar el desarrollo en virtud del tiempo
-      uri: mongodb+srv://invitado:Hola1234.@cluster-walmart-challen.ctlh5.mongodb.net/walmart-challenge?retryWrites=true&w=majority
+      uri: mongodb+srv://invitado:Hola1234.@cluster-walmart-challen.iv1kwxt.mongodb.net/walmart-challenge?retryWrites=true&w=majority
       database: walmart-challenge
 
 campaign:
